@@ -1,0 +1,379 @@
+
+
+.body, .h2, .p, .ul, .li {
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Barre de navigation */ 
+.barreDeNavigation {
+    background-color: #3e3e3e;
+    color: white;
+    overflow: hidden;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.listeBarreDeNavigation {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .sousMenu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.menu .sousMenu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Article */ 
+.ajustement {
+    margin: 80px;
+    padding: 50px; /*2em*/
+    max-width: 1500px;
+    box-shadow: 0px -1px 8px 1px lightgrey;
+    width: 1295;
+    height: 2200; /* 2493.23px; */
+}
+
+.profile-pic {
+    height: 280;
+}
+
+.moi  {
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.right{
+    float: left;
+    width: 70%;
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+.cright {
+    padding-right: 250px;
+    padding-left: 250;
+    text-align: end;
+    line-height: 0px;
+}
+
+.cleft {
+    padding-right: 250px;
+    padding-left: 250;
+    text-align: start;
+    line-height: 0px;
+}
+
+.sousright {
+    text-align: left;
+}
+
+.sousleft {
+    text-align: right; /* Niveau des 4 premières compétences */
+}
+
+/* Footer */ 
+.footer {
+    background-color: #3e3e3e;
+    color: white;
+    
+    text-align: center;
+
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+
+
+@media (max-width: 600px) {
+    .listeBarreDeNavigation {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        padding: 10px;
+    }
+}
+
+/* Pied de page */ 
+.content {
+    padding: 20px;
+}
+
+
+
+/*
+
+header{
+    height: 100px;
+}
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #C5C5C5;
+    border-top: 2px solid #AAA;
+}
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.table{
+    display: table;
+    margin: 0 auto;
+ }
+ .menu-ind:hover, .presentation{
+    border-top: 5px solid #4C8;
+    background-color: rgba(64, 200, 130, 0.15);
+ }
+ .menu-exp:hover, .parcours{
+    border-top: 5px solid #F1DC4F;
+    background-color: rgba(241, 211, 79, 0.15);
+ }
+ .menu-hob:hover, .competences{
+    border-top: 5px solid #0070BB;
+    background-color: rgba(000, 112, 192, 0.15);
+ }
+ .menu-con:hover, .recommandations{
+    border-top: 5px solid #E44D26;
+    background-color: rgba(228, 77, 38, 0.15);
+ }
+ nav li:hover a{
+    padding: 15px 30px 20px 30px;
+ }
+
+
+
+
+
+
+
+
+
+
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.sec{
+    margin: 0px 10%;
+}
+.left{
+    float: left;
+    width: 30%;
+}
+.right{
+    float: left;
+    width: 70%;
+}
+.cleft, .cright, .sousleft, .sousright{
+    width: 50%;
+    float: left;
+}
+.sec::after, .exp::after, .rec::after{
+    content: normal;
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+.orange{
+    border-top: 5px solid#E47D26;
+    background-color: rgba(228, 117, 38, 0.15);
+}
+.rose{
+    border-top: 5px solid #E44D96;
+    background-color: rgba(228, 77, 128, 0.15);
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.vert{
+    border-top: 5px solid#5F6;
+    background-color: rgba(70, 240, 80, 0.15);
+}
+.bleu{
+    border-top: 5px solid #29C;
+    background-color: rgba(30, 152, 212, 0.15);
+}
+.jaune{
+    border-top: 5px solid #F3E241;
+    background-color: rgba(240, 255, 69, 0.15);
+}
+
+
+
+
+
+
+
+
+
+.rouge{
+    border-top: 5px solid #E44D26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+.leftexp{
+    width: 45%;
+    float: left;
+}
+.rightexp{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+}
+.leftexp img{
+    width: 100%;
+    max-width: 400%;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen  and(max-width: 780px){
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+ }
+
+
+
+
+
+
+
+
+

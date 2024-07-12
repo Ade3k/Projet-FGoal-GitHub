@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>FootGoal !</title>
+
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            /* ajouter ici un background image à la place de color */
+            background-size: cover;
+        }
+
+        .masque {
+            /* gardien */
+            top: 100px;
+            right: 650px;
+            /*left:0px;*/
+            width: 150px;
+            /* pour changer la taille en longeur du masque dans le sprite */
+            /*46px*/
+            height: 74px;
+            /*73px*/
+            overflow: hidden;
+            border: solid blueviolet;
+            position: absolute;
+        }
+
+        .sprite {
+            position: absolute;
+            left: -2px;
+        }
+
+        .masque-2 {
+            /* ballon */
+            top: 420px;
+            right: 712px;
+            /*left:0px;*/
+            width: 40px;
+            /* pour changer la taille en longeur du masque dans le sprite */
+            /*46px*/
+            height: 35px;
+            /*73px*/
+            overflow: hidden;
+            border: solid blueviolet;
+            position: absolute;
+        }
+
+        .sprite {
+            position: absolute;
+            left: -2px;
+        }
+
+        footer img {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body onload="draw();">
+    <div>
+
+        <div class="masque" id="container">
+
+            <img id="contenu" class="sprite" src="SS.png" alt="sprite" title="sprite" />
+
+        </div>
+
+        <div class="masque-2" id="container">
+
+            <img id="contenu" class="sprite-2" src="Ballon retrecie.png" alt="sprite" title="sprite" />
+
+        </div>
+
+    </div>
+
+    <canvas id="game" width=800" height="600" class="couleurCanevas data-type=" main"></canvas>
+
+    <footer>
+        <div><a href="file:///Users/adams/Documents/IFOCOP/Projets/Jeu%20CV%20-%20Projet%20FootGoal%20!/Jeu.html"><img
+                    src="Back logo Black.png" alt="Retour" class="fleche" title="Retour"></a></div>
+    </footer>
+
+    <script src="FootGoal.js"></script>
+</body>
+
+</html>

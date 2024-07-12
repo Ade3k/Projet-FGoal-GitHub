@@ -1,0 +1,16 @@
+.title {
+    border-radius: 50%;
+    background-image: url(BVB.jpg);
+    color: black;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 150px;
+    left: 45%;
+    line-height: 150px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 2px #CCCCCC;
+    top: -80px;
+    width: 125px;
+}

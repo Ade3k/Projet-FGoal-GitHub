@@ -1,0 +1,80 @@
+/* */ 
+
+.corps {
+    background: url(desktop-wallpaper-signal-iduna-borussia-dortmund-borussia-dortmund-bvb.jpg);
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+}
+
+.title-1 { 
+    color: black;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 80px;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.bouton-1 {
+    font-family: "Anton SC", sans-serif;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 15px;
+    border-image-repeat: unset;
+    display: block;
+    background-color: black;
+    border-radius: 30px;
+    border: 5px solid black;
+    margin-bottom: 400px;                                    
+    width: 90px;
+                                    
+}
+
+.bouton-1:hover {
+    background-color: white;
+    color: #ffde5a;
+}
+
+.div-1 {
+    margin-left: 690px;
+}
+
+.pic-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 0px;
+    width: 30%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.lienSite {
+    font-family: "Anton SC", sans-serif;
+    font-style: italic;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.lienSite .cv .site {
+    width: 14px; 
+    height: 14px;
+    margin-left: 10px; 
+}
