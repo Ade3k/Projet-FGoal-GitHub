@@ -466,51 +466,8 @@ drawRect()
  })
  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
+/*
+// Code à revoir en attendant de me débloquer
 class Ball {
     constructor(){
         this.x=380;
@@ -563,21 +520,10 @@ window.addEventListener('load',function(){
     }
     animate()  
 });
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+// À revoir et tester 
 let ball = {
     x: 380,
     y: 360,
@@ -646,108 +592,10 @@ function update() {
 
 update();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// À faire : 
 //fonction addEventListener 
 //fonction event déplacement du ballon en y 
 //sprite : utiliser les méthodes du canevas créer un ctx --> dessiner l'image ctx draw image
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Configuration des trajectoires du ballon 
-document.addEventListener('DOMContentLoaded', function updateBallPosition() {
-    var canvas = document.getElementById('game');
-    var ctx = canvas.getContext('2d');
-
-    var x = 200;
-    var Y = 80;
-    var poteaux = 16000; 
-
-    ballon.x += ballon.dx;
-    ballon.y += ballon.dy;
-
-    // Gravité et friction
-    if (ballon.dy < 5) {
-        ballon.dy += 0.1; // gravité
-    }
-    ballon.dx *= 0.99; // friction
-    ballon.dy *= 0.99;
-
-    // Collision avec les poteaux du but 
-    if (ballon.x + ballon.radius > poteaux.width || ballon.x - ballon.radius < 0) {
-        ballon.dx = -ballon.dx;
-    }
-    if (ballon.y + ballon.radius > poteaux.height || ballon.y - ballon.radius < 0) {
-        ballon.dy = -ballon.dy;
-    }
-});
-
-function draw() {
-    ctx.clearRect(0, 0, poteaux.width, poteaux.height);
-    drawGoal();
-    drawBall();
-    updateBallPosition();
-    requestAnimationFrame(draw);
-};
-
-draw();
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 // Évenement du tir au but 
@@ -764,15 +612,6 @@ canvas.addEventListener('click', (event) => {
     ball.dy = power * Math.sin(angle);
 });
 */
-
-
-
-
-
-
-
-
-
 
 /*
 function updategardienPosition() {
@@ -803,67 +642,7 @@ function draw() {
 draw();
 */ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// À faire 
 // afficher aléatoirement une compétence 
 // point de départ lee point de pénalty et mouvement 
 
@@ -900,15 +679,6 @@ draw();
   }draw();
 };*/
 
-
-
-
-
-
-
-
-
-
     // Fonction pour mettre à jour la position du joueur
 //    function updatePlayer() {
       //  if (keys['ArrowUp']) player.y -= player.speed;
@@ -939,7 +709,7 @@ draw();
     //    clearCanvas();
   //      updatePlayer();
 //        drawPlayer();
-//        requestAnimationFrame(gameLoop);
+//        requestAnimationFrame(gameLoop); ???
    // }
 
     // Démarrer la boucle du jeu
